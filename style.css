@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+  /* font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.row {
+  width: 100%;
+}
+
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+/* header starts */
+
+header {
+  padding: 0% 7%;
+  background-color: #24a19c;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 2px;
+  background-color: white;
+}
+
+.nav ul li {
+  display: block;
+}
+
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  transition: 0.4s;
+}
+
+.nav ul li a:hover {
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/* header ends */
+
+/* banner design starts */
+
+#banner-section {
+  background-image: url("images/restaurant.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-contents {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.banner-contents h1 {
+  width: 100%;
+  margin: 15px auto;
+  background: rgba(255, 255, 0, 0.884);
+  border-radius: 5px;
+  font-size: 3rem;
+  padding: 10px;
+  font-family: "Handlee", cursive;
+}
+
+.banner-contents p {
+  width: 300px;
+  background: rgb(0, 128, 0);
+  margin: 15px auto;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 160px;
+  border: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgb(0, 128, 0);
+  color: white;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* banner design ends */
+
+/* about-us design starts */
+
+#about-us {
+  padding: 1%;
+}
+
+.about-us-contents {
+  text-align: center;
+}
+
+.about-us-contents h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.about-us-contents p {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+/* about-us design ends */
+
+/* food-menu starts */
+
+#food-menu {
+  padding: 1%;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body img {
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.item-desc {
+  background-color: rgb(165, 164, 164);
+}
+
+.item-name {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.item-desc p {
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.card {
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.food-menu::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* food-menu ends */
+
+/* contact starts hre */
+
+#contact {
+  padding: 1%;
+  background-color: #24a19c;
+}
+
+.map {
+  width: 100%;
+  height: 250px;
+}
+
+.contact-details {
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+.contact-details p,
+address {
+  font-size: 0.8rem;
+}
+
+/* contact ends here */
+
+footer {
+  padding: 1%;
+  background-color: #060930;
+  color: white;
+  display: flex;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 32px;
+}
+
+.social-menu {
+  text-align: center;
+}
+
+.icon-style {
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: 0 10px;
+  transition: 0.4s;
+}
+
+.icon-style:hover {
+  background-color: gray;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 75%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .logo-div {
+      text-align: left;
+    }
+    .nav ul {
+      text-align: right;
+    }
+    .nav ul li {
+      display: inline-block;
+    }
+    .nav ul li a {
+      display: inline-block;
+      transition: 0.4s;
+    }
+    .nav ul li a:hover {
+      background: transparent;
+      text-decoration: underline;
+      transform: scale(1.2);
+      border-radius: 0;
+    }
+    #banner-section {
+      position: relative;
+      height: 100vh;
+    }
+    .banner-contents {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .banner-contents h1 {
+      font-size: 3.5rem;
+      width: 700px;
+    }
+    footer p {
+      text-align: left;
+    }
+    .footer a {
+      text-align: right;
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 75%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  }
+}
